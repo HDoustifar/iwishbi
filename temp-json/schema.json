@@ -1,0 +1,730 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1657775105.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"foods",
+		"foodTypes",
+		"factors",
+		"factorItems",
+		"restaurant"
+	],
+	"properties": {
+		"foods": {
+			"$id": "#root/foods", 
+			"title": "Foods", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/foods/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"name",
+					"real_name",
+					"name_arabic",
+					"name_latin",
+					"discount",
+					"price",
+					"scale",
+					"cooking_duration",
+					"restaurant_id",
+					"food_type_id",
+					"cashback",
+					"real_price",
+					"packing_price",
+					"maximum_daily_capacity",
+					"maximum_hourly_capacity",
+					"created_at",
+					"updated_at",
+					"deleted_at"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/foods/items/id", 
+						"title": "Id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"name": {
+						"$id": "#root/foods/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"ميکس"
+						],
+						"pattern": "^.*$"
+					},
+					"real_name": {
+						"$id": "#root/foods/items/real_name", 
+						"title": "Real_name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"ميکس"
+						],
+						"pattern": "^.*$"
+					},
+					"name_arabic": {
+						"$id": "#root/foods/items/name_arabic", 
+						"title": "Name_arabic", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"name_latin": {
+						"$id": "#root/foods/items/name_latin", 
+						"title": "Name_latin", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"discount": {
+						"$id": "#root/foods/items/discount", 
+						"title": "Discount", 
+						"type": "integer",
+						"examples": [
+							0
+						],
+						"default": 0
+					},
+					"price": {
+						"$id": "#root/foods/items/price", 
+						"title": "Price", 
+						"type": "integer",
+						"examples": [
+							89
+						],
+						"default": 0
+					},
+					"scale": {
+						"$id": "#root/foods/items/scale", 
+						"title": "Scale", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"عدد"
+						],
+						"pattern": "^.*$"
+					},
+					"cooking_duration": {
+						"$id": "#root/foods/items/cooking_duration", 
+						"title": "Cooking_duration", 
+						"type": "integer",
+						"examples": [
+							0
+						],
+						"default": 0
+					},
+					"restaurant_id": {
+						"$id": "#root/foods/items/restaurant_id", 
+						"title": "Restaurant_id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"food_type_id": {
+						"$id": "#root/foods/items/food_type_id", 
+						"title": "Food_type_id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"cashback": {
+						"$id": "#root/foods/items/cashback", 
+						"title": "Cashback", 
+						"type": "number",
+						"examples": [
+							13.35
+						],
+						"default": 0.0
+					},
+					"real_price": {
+						"$id": "#root/foods/items/real_price", 
+						"title": "Real_price", 
+						"type": "number",
+						"examples": [
+							62.3
+						],
+						"default": 0.0
+					},
+					"packing_price": {
+						"$id": "#root/foods/items/packing_price", 
+						"title": "Packing_price", 
+						"type": "number",
+						"examples": [
+							4.45
+						],
+						"default": 0.0
+					},
+					"maximum_daily_capacity": {
+						"$id": "#root/foods/items/maximum_daily_capacity", 
+						"title": "Maximum_daily_capacity", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"maximum_hourly_capacity": {
+						"$id": "#root/foods/items/maximum_hourly_capacity", 
+						"title": "Maximum_hourly_capacity", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"created_at": {
+						"$id": "#root/foods/items/created_at", 
+						"title": "Created_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"updated_at": {
+						"$id": "#root/foods/items/updated_at", 
+						"title": "Updated_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"deleted_at": {
+						"$id": "#root/foods/items/deleted_at", 
+						"title": "Deleted_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"foodTypes": {
+			"$id": "#root/foodTypes", 
+			"title": "Foodtypes", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/foodTypes/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"name",
+					"real_name",
+					"name_latin",
+					"discount",
+					"cooking_duration",
+					"restaurant_id",
+					"created_at",
+					"updated_at",
+					"deleted_at"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/foodTypes/items/id", 
+						"title": "Id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"name": {
+						"$id": "#root/foodTypes/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"پيتزا"
+						],
+						"pattern": "^.*$"
+					},
+					"real_name": {
+						"$id": "#root/foodTypes/items/real_name", 
+						"title": "Real_name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"پيتزا"
+						],
+						"pattern": "^.*$"
+					},
+					"name_latin": {
+						"$id": "#root/foodTypes/items/name_latin", 
+						"title": "Name_latin", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"discount": {
+						"$id": "#root/foodTypes/items/discount", 
+						"title": "Discount", 
+						"type": "integer",
+						"examples": [
+							0
+						],
+						"default": 0
+					},
+					"cooking_duration": {
+						"$id": "#root/foodTypes/items/cooking_duration", 
+						"title": "Cooking_duration", 
+						"type": "null",
+						"default": null
+					},
+					"restaurant_id": {
+						"$id": "#root/foodTypes/items/restaurant_id", 
+						"title": "Restaurant_id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"created_at": {
+						"$id": "#root/foodTypes/items/created_at", 
+						"title": "Created_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"updated_at": {
+						"$id": "#root/foodTypes/items/updated_at", 
+						"title": "Updated_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"deleted_at": {
+						"$id": "#root/foodTypes/items/deleted_at", 
+						"title": "Deleted_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"factors": {
+			"$id": "#root/factors", 
+			"title": "Factors", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/factors/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"price",
+					"phone_number",
+					"description",
+					"date",
+					"time",
+					"day_name",
+					"restaurant_id",
+					"created_at",
+					"updated_at",
+					"deleted_at"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/factors/items/id", 
+						"title": "Id", 
+						"type": "integer",
+						"examples": [
+							57911
+						],
+						"default": 0
+					},
+					"price": {
+						"$id": "#root/factors/items/price", 
+						"title": "Price", 
+						"type": "integer",
+						"examples": [
+							75000
+						],
+						"default": 0
+					},
+					"phone_number": {
+						"$id": "#root/factors/items/phone_number", 
+						"title": "Phone_number", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"description": {
+						"$id": "#root/factors/items/description", 
+						"title": "Description", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"ساعت 2 اماده باشد حضوري"
+						],
+						"pattern": "^.*$"
+					},
+					"date": {
+						"$id": "#root/factors/items/date", 
+						"title": "Date", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"1401-03-30"
+						],
+						"pattern": "^.*$"
+					},
+					"time": {
+						"$id": "#root/factors/items/time", 
+						"title": "Time", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"13:03:50"
+						],
+						"pattern": "^.*$"
+					},
+					"day_name": {
+						"$id": "#root/factors/items/day_name", 
+						"title": "Day_name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"دوشنبه"
+						],
+						"pattern": "^.*$"
+					},
+					"restaurant_id": {
+						"$id": "#root/factors/items/restaurant_id", 
+						"title": "Restaurant_id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"created_at": {
+						"$id": "#root/factors/items/created_at", 
+						"title": "Created_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"updated_at": {
+						"$id": "#root/factors/items/updated_at", 
+						"title": "Updated_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"deleted_at": {
+						"$id": "#root/factors/items/deleted_at", 
+						"title": "Deleted_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"factorItems": {
+			"$id": "#root/factorItems", 
+			"title": "Factoritems", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/factorItems/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"food_id",
+					"factor_id",
+					"name",
+					"amount",
+					"scale",
+					"price",
+					"price_total",
+					"restaurant_id",
+					"created_at",
+					"updated_at",
+					"deleted_at"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/factorItems/items/id", 
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"food_id": {
+						"$id": "#root/factorItems/items/food_id", 
+						"title": "Food_id", 
+						"type": "integer",
+						"examples": [
+							18
+						],
+						"default": 0
+					},
+					"factor_id": {
+						"$id": "#root/factorItems/items/factor_id", 
+						"title": "Factor_id", 
+						"type": "integer",
+						"examples": [
+							57911
+						],
+						"default": 0
+					},
+					"name": {
+						"$id": "#root/factorItems/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"برگر مخصوص"
+						],
+						"pattern": "^.*$"
+					},
+					"amount": {
+						"$id": "#root/factorItems/items/amount", 
+						"title": "Amount", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"scale": {
+						"$id": "#root/factorItems/items/scale", 
+						"title": "Scale", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"عدد"
+						],
+						"pattern": "^.*$"
+					},
+					"price": {
+						"$id": "#root/factorItems/items/price", 
+						"title": "Price", 
+						"type": "integer",
+						"examples": [
+							75
+						],
+						"default": 0
+					},
+					"price_total": {
+						"$id": "#root/factorItems/items/price_total", 
+						"title": "Price_total", 
+						"type": "integer",
+						"examples": [
+							75
+						],
+						"default": 0
+					},
+					"restaurant_id": {
+						"$id": "#root/factorItems/items/restaurant_id", 
+						"title": "Restaurant_id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"created_at": {
+						"$id": "#root/factorItems/items/created_at", 
+						"title": "Created_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"updated_at": {
+						"$id": "#root/factorItems/items/updated_at", 
+						"title": "Updated_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"deleted_at": {
+						"$id": "#root/factorItems/items/deleted_at", 
+						"title": "Deleted_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"restaurant": {
+			"$id": "#root/restaurant", 
+			"title": "Restaurant", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/restaurant/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"owner_id",
+					"name",
+					"description",
+					"location",
+					"created_at",
+					"updated_at",
+					"deleted_at"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/restaurant/items/id", 
+						"title": "Id", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"owner_id": {
+						"$id": "#root/restaurant/items/owner_id", 
+						"title": "Owner_id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"name": {
+						"$id": "#root/restaurant/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"کافه پارک"
+						],
+						"pattern": "^.*$"
+					},
+					"description": {
+						"$id": "#root/restaurant/items/description", 
+						"title": "Description", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"location": {
+						"$id": "#root/restaurant/items/location", 
+						"title": "Location", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"created_at": {
+						"$id": "#root/restaurant/items/created_at", 
+						"title": "Created_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"updated_at": {
+						"$id": "#root/restaurant/items/updated_at", 
+						"title": "Updated_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"deleted_at": {
+						"$id": "#root/restaurant/items/deleted_at", 
+						"title": "Deleted_at", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		}
+	}
+}
